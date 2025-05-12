@@ -5,6 +5,8 @@ const PORT = 3000;
 
 const posts = require('./posts');
 
+app.use(express.static('images'));
+
 app.get('/', (req, res) => {
     res.send('Server del mio blog');
 })

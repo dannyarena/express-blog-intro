@@ -3,6 +3,8 @@ const app = express();
 
 const PORT = 3000;
 
+const posts = require('./posts')
+
 app.get('/', (req, res) => {
     res.send('Server del mio blog');
 })
@@ -10,3 +12,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server avviato su http://localhost:${PORT}`);
 });
+
